@@ -1,0 +1,34 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.slide{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.slide-2{
+   left: 50%;
+   background-image: url("../img/6794747_preview.png");
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+.slide-1{
+   background-image: url("../img/6904855_preview.png");
+   background-size: cover;
+   background-attachment: fixed;
+}

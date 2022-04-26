@@ -1,0 +1,114 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+   background-color: #4895ef;
+}
+.modal{
+   display: none;
+}
+
+.open-btn{
+   font-size: 28px;
+   text-transform: capitalize;
+   padding: 14px 28px;
+   border: none;
+   background-color: #111;
+   border-radius: 12px;
+   color: #fff;
+   cursor: pointer;
+   transition: color .3s ease , background-color .3s ease;
+
+}
+
+.open-btn:hover{
+   background-color: #333;
+   color: #fff;
+}
+
+.open-btn:active{
+   background-color: #111;
+   color: #fff;
+}
+
+
+.modal{
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(0, 0, 0 , .8);
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* transform: translate(50%); */
+   transition: all .4s;
+   opacity: 0;
+   visibility: hidden;
+}
+.show{
+   visibility: visible;
+   opacity: 1;
+   /* transform: translate(0%);/ */
+}
+
+.madal-content{
+   position: relative;
+   background-color: #fff;
+   text-align: center;
+   padding: 30px 20px;
+   border-radius: 14px;
+   font-family: 'Courier New', Courier, monospace;
+
+}
+
+.madal-content h2{
+   font-size: 32px;
+   font-weight: 700;
+   margin-bottom: 10px;
+   text-transform: capitalize;
+}
+
+.madal-content p{
+   text-align: center;
+   font-size: 22px;
+   font-weight: 500;
+   text-transform: lowercase;
+   margin-bottom: 10px;
+}
+
+.madal-content a:nth-child(3){
+   display: block;
+   width: 100%;
+   padding: 12px 0;
+   text-align: center;
+   background-color: #222;
+   margin-bottom: 10px;
+   font-size: 25px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #fff;
+   letter-spacing: 2px;
+   font-weight: 700;
+   border-radius: 8px;
+}
+
+.madal-content a:nth-child(4){
+   font-size: 22px;
+
+
+}
+
+.fa-solid{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   font-size: 28px;
+   cursor: pointer;
+}

@@ -1,0 +1,27 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+   background-color: #000;
+   background-image: url('../img/flashlight.png');
+   background-repeat: no-repeat;
+   background-size: 700px 700px;
+   background-position: center center;
+   text-rendering: optimizeLegibility;
+   margin: 50px auto;
+}
+
+body > div{
+   max-width: 800px;
+   margin: 0 auto;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 32px;
+}

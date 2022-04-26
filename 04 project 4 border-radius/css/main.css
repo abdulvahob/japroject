@@ -1,0 +1,65 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.radius{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: #222;
+}
+
+.card{
+   max-width: 390px;
+   height: 440px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 57% 43% 34% 66% / 69% 30% 70% 31% ;
+   background-image: url("../img/1.jpg");
+}
+
+.card:nth-child(2){
+   border-radius: 27% 73% 30% 70% / 40% 69% 31% 60%  ;
+
+}
+.card:nth-child(3){
+   border-radius: 37% 63% 66% 34% / 38% 69% 31% 62%  ;
+
+}
+
+h2{
+   z-index: 2;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 42px;
+   color: #fff;
+   text-shadow: 3px 3px 0 red , 0 0 20px #e5e5e5 , 0 0 40px #e5e5e5 ,  0 0 80px #e5e5e5;
+
+}
+h2 span{
+   color: orange;
+}
+
+.blob{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+}
+
+.blob svg{
+   width: 600px;
+}
+
+.blob:nth-child(1) svg{
+   width: 800px;
+   filter: blur(80px);
+   z-index: -1;
+}
