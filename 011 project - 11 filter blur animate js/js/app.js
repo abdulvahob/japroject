@@ -1,12 +1,11 @@
 
 let container = document.querySelector(".container")
 
-for(let i = 0; i<40 ; i++){
+for(let i = 0; i<30 ; i++){
    let div  = document.createElement('div')
    div.classList.add('show')
    container.append(div)
 }
-
 let show = document.querySelectorAll('.show')
 
 setInterval(() => {
